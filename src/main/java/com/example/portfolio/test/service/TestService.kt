@@ -1,6 +1,6 @@
-package com.example.portfolio.service
+package com.example.portfolio.test.service
 
-import com.example.portfolio.dto.TodoDto
+import com.example.portfolio.test.dto.TodoDto
 import org.springframework.stereotype.Service
 
 @Service

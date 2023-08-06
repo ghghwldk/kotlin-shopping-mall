@@ -1,4 +1,4 @@
-package com.example.portfolio.entity;
+package com.example.portfolio.test.entity;
 
 import lombok.*;
 
