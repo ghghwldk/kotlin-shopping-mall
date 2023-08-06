@@ -1,4 +1,4 @@
-package com.example.portfolio.test.entity;
+package com.example.portfolio.product.domain.entity;
 
 import lombok.*;
 
@@ -8,14 +8,14 @@ import javax.persistence.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "todo")
+@Table(name = "product")
 @Entity
-public class TodoEntity {
+public class ProductEntity {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column
     private Long id;
-
     @Column
     private String name;
 }
+

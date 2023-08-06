@@ -29,6 +29,16 @@ dependencies {
 
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc' // Jdbc, Driver
 	implementation 'com.h2database:h2' // h2 : implementation
+
+	implementation 'org.mapstruct:mapstruct:1.4.2.Final'
+	annotationProcessor "org.mapstruct:mapstruct-processor:1.4.2.Final"
+	annotationProcessor(
+			'org.projectlombok:lombok',
+			'org.projectlombok:lombok-mapstruct-binding:0.1.0',
+			'org.mapstruct:mapstruct-processor:1.4.2.Final'
+	)
+	// 테스트에서 사용할 경우
+	//testAnnotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
 }
 
 compileKotlin {
