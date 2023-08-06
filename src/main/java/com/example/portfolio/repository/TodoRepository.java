@@ -1,6 +1,6 @@
-package com.example.sales.repository;
+package com.example.portfolio.repository;
 
-import com.example.sales.entity.TodoEntity;
+import com.example.portfolio.entity.TodoEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

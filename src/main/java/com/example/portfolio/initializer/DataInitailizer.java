@@ -1,7 +1,7 @@
-package com.example.sales.initializer;
+package com.example.portfolio.initializer;
 
-import com.example.sales.entity.TodoEntity;
-import com.example.sales.repository.TodoRepository;
+import com.example.portfolio.entity.TodoEntity;
+import com.example.portfolio.repository.TodoRepository;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

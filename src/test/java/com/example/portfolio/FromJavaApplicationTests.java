@@ -1,7 +1,7 @@
-package com.example.sales;
+package com.example.portfolio;
 
-import com.example.sales.entity.TodoEntity;
-import com.example.sales.repository.TodoRepository;
+import com.example.portfolio.entity.TodoEntity;
+import com.example.portfolio.repository.TodoRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
