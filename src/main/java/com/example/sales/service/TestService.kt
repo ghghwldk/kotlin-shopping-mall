@@ -1,6 +1,6 @@
-package com.example.fromJava.service
+package com.example.sales.service
 
-import com.example.fromJava.dto.TodoDto
+import com.example.sales.dto.TodoDto
 import org.springframework.stereotype.Service
 
 @Service

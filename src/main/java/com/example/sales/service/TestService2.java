@@ -1,4 +1,4 @@
-package com.example.fromJava.service;
+package com.example.sales.service;
 
 interface TestService2 {
     public void test();

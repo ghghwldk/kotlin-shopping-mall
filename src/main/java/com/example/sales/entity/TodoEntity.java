@@ -1,12 +1,13 @@
-package com.example.fromJava.entity;
+package com.example.sales.entity;
 
 import lombok.*;
 
 import javax.persistence.*;
 
-@AllArgsConstructor
 @Getter
 @Entity
+@Builder
+@AllArgsConstructor
 @Table(name = "todo")
 public class TodoEntity {
     @Id
@@ -16,5 +17,4 @@ public class TodoEntity {
 
     @Column
     private String name;
-
 }
