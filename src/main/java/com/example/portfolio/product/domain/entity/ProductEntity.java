@@ -1,6 +1,6 @@
 package com.example.portfolio.product.domain.entity;
 
-import com.example.portfolio.global.BaseTimeEntity;
+import com.example.portfolio.global.BaseEntity;
 import lombok.*;
 
 import javax.persistence.*;
@@ -11,7 +11,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Table(name = "product")
 @Entity
-public class ProductEntity extends BaseTimeEntity {
+public class ProductEntity extends BaseEntity {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column

@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 
 import javax.persistence.Column;
@@ -17,4 +18,6 @@ public class ProductDto {
     private String name;
     private LocalDateTime createdDate;
     private LocalDateTime modifiedDate;
+    private String createdBy;
+    private String updatedBy;
 }
