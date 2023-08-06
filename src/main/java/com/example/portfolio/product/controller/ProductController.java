@@ -39,6 +39,6 @@ public class ProductController {
 
     @GetMapping(Urls.prefix)
     private ResponseEntity<ProductsDto> get(){
-        return null;
+        return new ResponseEntity<ProductsDto>(productService.findAll(), HttpStatus.FOUND);
     }
 }

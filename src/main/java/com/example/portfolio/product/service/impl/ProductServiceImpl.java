@@ -31,9 +31,12 @@ public class ProductServiceImpl implements ProductService {
                 .stream()
                 .map(productMapper::toEntity)
                 .collect(Collectors.toList()));
-
+        
         logger.info("data is successfully saved");
+        return get(saved);
+    }
 
+    public SavedIdsResponse get(List<ProductEntity> saved){
         List<Long> ids = saved.stream()
                 .map(ProductEntity::getId)
                 .collect(Collectors.toList());

@@ -13,4 +13,5 @@ import java.util.List;
 @Data
 public class SavedIdsResponse {
     public List<Long> ids;
+
 }
