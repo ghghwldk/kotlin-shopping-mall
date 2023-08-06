@@ -8,6 +8,7 @@ import javax.persistence.*;
 @Entity
 @Builder
 @AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "todo")
 public class TodoEntity {
     @Id

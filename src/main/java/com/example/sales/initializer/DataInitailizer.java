@@ -19,8 +19,13 @@ public class DataInitailizer {
     private final Logger logger = LoggerFactory.getLogger(DataInitailizer.class);
     private final TodoRepository todoRepository;
     @PostConstruct
+    public void initialize() {
+        runFirst();
+        runSecond();
+    }
+
     @Transactional
-    public void initialize(){
+    public void runFirst(){
         logger.info("Data initialization started.");
         TodoEntity entity = TodoEntity.builder()
                 .name("name1")
@@ -31,5 +36,10 @@ public class DataInitailizer {
         todoRepository.saveAll(todoEntityList);
 
         logger.info("Data initialization finished.");
+    }
+
+    public void runSecond(){
+        List<TodoEntity> todoEntities = todoRepository.findAll();
+        todoEntities = todoEntities;
     }
 }
