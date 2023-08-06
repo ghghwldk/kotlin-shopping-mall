@@ -12,10 +12,14 @@ import java.util.Optional;
 public class AuditConfig implements AuditorAware<String> {
     @Override
     public Optional<String> getCurrentAuditor(){
-        HttpServletRequest request =
-                ((ServletRequestAttributes)
-                        RequestContextHolder.currentRequestAttributes()).getRequest();
-        String userId = request.getHeader("userId");
-        return Optional.of(userId);
+        HttpServletRequest request = ((ServletRequestAttributes)RequestContextHolder
+                .currentRequestAttributes())
+                .getRequest();
+
+        String userId = request
+                .getHeader("userId");
+
+        return Optional
+                .of(userId);
     }
 }
